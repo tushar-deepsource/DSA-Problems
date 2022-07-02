@@ -1,22 +1,23 @@
 #User function Template for python3
 
 class Solution:
-    def count_paths(self, graph, s, d, visited):
-        if s == d:
+    def count_paths(self, graph, curr, dest, visited):
+        if curr == dest:
             return 1
-        visited[s] = True
+        visited[curr] = True
         ans = 0
-        for vertex in graph[s]:
+        for vertex in graph[curr]:
             if(visited[vertex] == False):
-                ans += self.count_paths(graph, vertex, d, visited)
-        visited[s] = False
+                ans += self.count_paths(graph, vertex, dest, visited)
+        visited[curr] = False
         return ans
-    def possible_paths(self, edges, n, s, d):
+
+    def possible_paths(self, edges, n, source, dest):
         graph = [[] for i in range(n)]
         for edge in edges:
             graph[edge[0]].append(edge[1])
         visited = [False for i in range(n)]
-        return self.count_paths(graph, s, d, visited)
+        return self.count_paths(graph, source, dest, visited)
 
 #{ 
 #  Driver Code Starts
