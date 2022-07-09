@@ -1,2 +1,1 @@
-# CrackYourInternship Challenge!
-Stay away!! I'm working!
+### A repo including my submitted solutions to Problems related to Data Structures and Algorithms
