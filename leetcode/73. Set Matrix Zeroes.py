@@ -1,4 +1,5 @@
 class Solution:
+
     def setZeroes(self, matrix: List[List[int]]) -> None:
         m = len(matrix)
         n = len(matrix[0])
@@ -6,9 +7,9 @@ class Solution:
         for i in range(m):
             for j in range(n):
                 if matrix[i][j] == 0:
-                    locations.append([i,j])
+                    locations.append([i, j])
         for location in locations:
             for i in range(m):
-                matrix[i][location[1]]=0
+                matrix[i][location[1]] = 0
             for j in range(n):
-                matrix[location[0]][j]=0
+                matrix[location[0]][j] = 0
