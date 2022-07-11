@@ -3,7 +3,8 @@
 
 class Solution:
 
-    def canReach(self, A, N):
+    @staticmethod
+    def canReach(A, N):
         lastReach = N - 1
         for i in range(N - 2, -1, -1):
             if A[i] >= lastReach - i:

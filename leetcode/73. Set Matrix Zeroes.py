@@ -1,6 +1,7 @@
 class Solution:
 
-    def setZeroes(self, matrix: List[List[int]]) -> None:
+    @staticmethod
+    def setZeroes(matrix: List[List[int]]) -> None:
         m = len(matrix)
         n = len(matrix[0])
         locations = []

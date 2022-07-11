@@ -1,7 +1,8 @@
 # User function Template for python3
 class Solution:
 
-    def longSubarrWthSumDivByK(self, arr, n, k):
+    @staticmethod
+    def longSubarrWthSumDivByK(arr, n, k):
         mep = {}
         max_len = 0
         curr_sum = 0

@@ -16,7 +16,8 @@ from collections import deque
 
 class Solution:
 
-    def diagonal(self, root):
+    @staticmethod
+    def diagonal(root):
         #:param root: root of the given tree.
         # return: print out the diagonal traversal,  no need to print new line
         # code here

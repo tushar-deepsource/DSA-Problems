@@ -1,6 +1,7 @@
 class Solution:
 
-    def findDuplicates(self, nums: List[int]) -> List[int]:
+    @staticmethod
+    def findDuplicates(nums: List[int]) -> List[int]:
         ls = [
             0,
         ] * (len(nums) + 1)

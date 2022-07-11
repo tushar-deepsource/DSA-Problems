@@ -1,7 +1,8 @@
 # recursive approach using hashmapping concept (won't work as per the constraints)
 class Solution:
 
-    def findDuplicate(self, nums):
+    @staticmethod
+    def findDuplicate(nums):
 
         def store(nums, cur):
             if cur == nums[cur]:
@@ -16,7 +17,8 @@ class Solution:
 # iterative approach
 class Solution:
 
-    def findDuplicate(self, nums: List[int]) -> int:
+    @staticmethod
+    def findDuplicate(nums: List[int]) -> int:
         for i in range(len(nums) - 1):
             for j in range(i + 1, len(nums)):
                 if nums[i] == nums[j]:

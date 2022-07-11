@@ -1,6 +1,7 @@
 class Solution:
 
-    def findMinDiff(self, A, N, M):
+    @staticmethod
+    def findMinDiff(A, N, M):
         A.sort()
         min_d = A[-1] - A[0]
         for i in range(N - M + 1):
