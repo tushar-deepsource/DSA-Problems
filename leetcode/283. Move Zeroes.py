@@ -2,9 +2,7 @@ class Solution:
 
     @staticmethod
     def moveZeroes(nums: List[int]) -> None:
-        """
-        Do not return anything, modify nums in-place instead.
-        """
+        """Do not return anything, modify nums in-place instead."""
         c = 0
         for i in nums:
             if i == 0:
