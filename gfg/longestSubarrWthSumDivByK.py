@@ -12,7 +12,7 @@ class Solution:
             mod = ((curr_sum % k) + k) % k
             if mod == 0:
                 max_len = i + 1
-            elif mod in mep.keys():
+            elif mod in mep:
                 max_len = max(max_len, i - mep[mod])
             else:
                 mep[mod] = i
