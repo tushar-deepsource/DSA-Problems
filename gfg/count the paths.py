@@ -32,9 +32,7 @@ if __name__ == "__main__":
         n, m, s, d = map(int, input().split())
         edges = []
         for _ in range(m):
-            x, y = input().split()
-            x = int(x)
-            y = int(y)
+            x, y = map(int, input().split())
             edges.append([x, y])
         obj = Solution()
         ans = obj.possible_paths(edges, n, s, d)
