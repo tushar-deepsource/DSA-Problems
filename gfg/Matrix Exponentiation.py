@@ -17,7 +17,8 @@ def exp(m, n):
 
 class Solution:
 
-    def FindNthTerm(self, n):
+    @staticmethod
+    def FindNthTerm(n):
         m = np.array([1, 1, 1, 0], dtype=np.int_).reshape(2, 2)
         p = exp(m, n - 1)
         init = np.array([1, 1], dtype=np.int_).reshape(2, 1)

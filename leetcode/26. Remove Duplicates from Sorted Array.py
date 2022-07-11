@@ -1,6 +1,7 @@
 class Solution:
 
-    def removeDuplicates(self, nums: List[int]) -> int:
+    @staticmethod
+    def removeDuplicates(nums: List[int]) -> int:
         temp = None
         i = 0
         for num in nums:
