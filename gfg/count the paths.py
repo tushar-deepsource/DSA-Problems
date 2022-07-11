@@ -29,7 +29,7 @@ class Solution:
 if __name__ == "__main__":
     T = int(input())
     for i in range(T):
-        n, m, s, d = map(int,input().split())
+        n, m, s, d = map(int, input().split())
         edges = []
         for _ in range(m):
             x, y = input().split()
